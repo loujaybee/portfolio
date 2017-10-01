@@ -7,7 +7,7 @@
                 font-family: 'Lora', serif;
                 margin: auto;
                 font-size: 1.2em;
-                padding: 50px;
+                padding: 150px;
                 color: #3e3e3e;
             }
             .container {
@@ -46,80 +46,99 @@
                 background-position: center center;
                 box-shadow: 1px 1px 1px grey;
             }
+            .inline-block {
+                display: inline-block;
+                vertical-align:top;
+            }
+            .half {
+                width: 40%;
+            }
+            .gutter {
+                margin-left: 10%;
+            }
+            @media screen and (max-width:1000px) {
+               .half {
+                    width: 100%;
+               }
+               .gutter {
+                    margin-left: 0px;
+                }
+            }
         </style>
     </head>
     <body>        
     <div class="container">
         <div class="image"></div>
-        <br>
-        <br>
         <p>Hey, I'm Lou.</p>
-        <p>I'm a <strong>Front End Software Developer</strong> based in <u>London</u>.</p>
-        <p>I have a penchant for Javascript &amp; Learning. </p>
-        <br>
-        <p><strong>What I'm Doing <i><u>Right</u></i> Now</strong></p>
+        <p>I'm a <strong>Front End</strong> Software Developer based in London.</p>
+        <p> I mostly spend time working on Javascript applications in both AngularJS and React.</p>
+        <p> My interests are very broad: Psychology, Philosophy, Entrepreneurship, Organisations (Culture &amp; Structure), Leadership &amp; Coaching to name a few. I've always been interested in experimentation. The best experiment I could undertake is creating a <a href="http://www.tealforteal.com/what-is-teal.html" target="_blank">Teal</a> organisation. </p>
+        <div class="inline-block half">
+            <p><strong>What I'm Currently Working On</strong></p>
+            <ul>
+                <li>
+                    <p>
+                        Winding down a previous project 
+                        <a target="_blank" href="http://www.theliftingacademy.com">The Lifting Academy</a>.
+                        <small>(AngularJS, Express, NodeJS, Heroku)</small>
+                    </p>
+                </li>
+                <li>
+                    <p>Gearing up two new projects: </p>
+                    <ul>
+                        <li><p><a target="_blank" href="http://www.splitoo.com">Splitoo</a> - A payment-sharing app  <small>(React, NodeJS, Stripe payments)</small></p></li>
+                        <li><p><a target="_blank" href="http://www.hacktopia.io">Hacktopia</a> - A recruiting app  <small>(React, NodeJS)</small></p></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>
+                        <a href="http://www.thedevcoach.co.uk/2017/07/18/the-best-software-developers-write-you-should-too/" target="_blank">Writing</a>
+                         every week on my blog, 
+                        <a target="_blank" href="http://www.thedevcoach.co.uk">
+                            The Dev Coach.
+                        </a>
+                     Sometimes guest-posting elswhere (<a target="_blank" href="http://www.simpleprogrammer.com">Simple Programmer</a>, <a target="_blank" href="http://www.dev.to">dev.to</a>)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <a target="_blank" href="http://www.thedevcoach.co.uk/books/"> Reading</a>. A lot. 
+                        Here is my <a href="http://thedevcoach.co.uk/reading-list/" target="_blank"> recommended reading list </a>
+                    </p>
 
-        <ul>
-            <li>
-                <p>
-                    Winding down a previous project 
-                    <a target="_blank" href="http://www.theliftingacademy.com">
-                        The Lifting Academy.
-                    </a>
-                </p>
-            </li>
-            <li>
-                <p>Gearing up two new projects: </p>
-                <ul>
-                    <li><p><a target="_blank" href="http://www.splitoo.com">Splitoo</a> - A payment-sharing app  <small>(React, NodeJS, Stripe payments)</small></p></li>
-                    <li><p><a target="_blank" href="http://www.hacktopia.io">Hacktopia</a> - A recruiting app  <small>(React, NodeJS)</small></p></li>
-                </ul>
-            </li>
-            <li>
-                <p>
-                    Writing, because I think
-                    <a href="http://www.thedevcoach.co.uk/2017/07/18/the-best-software-developers-write-you-should-too/" target="_blank">
-                        it's awesome.</a>
-                     &nbsp;So I do it every week on my blog, 
-                    <a target="_blank" href="http://www.thedevcoach.co.uk">
-                        The Dev Coach.
-                    </a>
-                </p>
-            </li>
-            <li>
-                <p>Guest posting on <a target="_blank" href="http://www.simpleprogrammer.com">Simple Programmer</a> and <a target="_blank" href="http://www.dev.to">Dev.to.</a>
-                </p>
-            </li>
-            <li><p><a target="_blank" href="http://www.thedevcoach.co.uk/books/"> Reading</a> a hideous amount.</p></li>
-            <li><p> ... and I'm heavily debating taking up the drums. </p></li>
-        </ul>
-        <br>
-        <p><strong>My Beliefs</strong></p>
-        <ol>
-            <li><p>Software development is people first, tech second.</p></li>
-            <li><p>We cannot share our ideas enough.</p></li>
-        </ol>
-        <br>
-        <p><strong>Let's chat!</strong></p>
-        <p> contact@louisjohnbichard.co.uk </p>
-        <p> 
-            Or, alternatively, find me on: <a href="twitter.com/loujaybee">
-                Twitter
-            </a>
-            or 
-            <a href="https://www.linkedin.com/in/louisbichard">
-                LinkedIn.
-            </a>
-        </p>
+                </li>
+            </ul>
+        </div>
+        <div class="inline-block half gutter">
+            <p><strong>My Beliefs</strong></p>
+            <ol>
+                <li><p>Software development is people first, tech second.</p></li>
+                <li><p>We cannot share our ideas enough.</p></li>
+                <li><p>Life is an ongoing apprenticeship.</p></li>
+            </ol>
+            <br>
+            <p><strong>Let's chat!</strong></p>
+            <p> 
+                contact@louisjohnbichard.co.uk </p>
+            <p> 
+                Or, alternatively, find me on: <a href="twitter.com/loujaybee">
+                    Twitter
+                </a>
+                or 
+                <a href="https://www.linkedin.com/in/louisbichard">
+                    LinkedIn.
+                </a>
+            </p>
+        </div>
         <br>
         <hr>
         <br>
         <p  class="center"><small>
-            This website is intentionally simplistic. Thanks for the inspiration <a href="https://sivers.org/">Derek Sivers.</a> 
+            This website is intentionally simplistic. Inspiration: <a href="https://sivers.org/">Derek Sivers.</a> 
 
             </br>
             </br>
-            I deleted my old one in favour of <a target="_blank" href="http://www.thedevcoach.co.uk/2017/07/27/5460/">contributing more</a> to the community.<br>
+            I deleted my old one in order to <a target="_blank" href="http://www.thedevcoach.co.uk/2017/07/27/5460/">spend more time creating</a>.<br>
         </small></p>
     </div>
     </body>
